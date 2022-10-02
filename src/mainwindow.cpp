@@ -61,19 +61,6 @@ void MainWindow::SendDirsFiles(void)
     QFileInfoList ListF = StatDir->GetCurListFile();
     QFileInfoList ListD = StatDir->GetCurListDirs();
 
-//    qDebug() << "Dirs  " << CurPath;
-//    for (i = 0; i < ListD.count(); ++i)
-//    {
-//        qDebug() << ListD[i].fileName();
-//    }
-//    qDebug() << "///////////////";
-//    qDebug() << "Files  " << CurPath;
-//    for (i = 0; i < ListF.count(); ++i)
-//    {
-//        qDebug() << ListF[i].fileName();
-//    }
-//    qDebug() << "///////////////\n\n";
-
     for (i = 0; i < ListD.count(); ++i)
     {
         Item = new NodeTree(CurItem);
